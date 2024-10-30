@@ -1,0 +1,30 @@
+ 
+datasets:
+    mesh_folder:
+        data_folder: '/mnt/data/ndip/h36m_easymocap/S1/{action}/obj_files' # path/location of input obj files
+deformation_transfer_path: 'transfer_data/smpl2smplx_deftrafo_setup.pkl'
+mask_ids_fname: 'smplx_mask_ids.npy'
+summary_steps: 50
+output_folder: '/mnt/data/ndip/h36m_easymocap/S1/{action}/smplx' # path/location of output obj files
+use_cuda: True
+batch_size: 32
+
+edge_fitting:
+    per_part: False
+
+optim:
+    type: 'trust-ncg'
+    maxiters: 50
+    gtol: 1e-05
+
+body_model:
+    model_type: "smplx"
+    gender: "neutral"
+    folder: "transfer_data/body_models"
+    use_compressed: False
+    use_face_contour: False
+    smplx:
+        betas:
+            num: 10
+        expression:
+            num: 10

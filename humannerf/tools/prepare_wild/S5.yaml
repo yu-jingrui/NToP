@@ -1,0 +1,11 @@
+dataset:
+  path: /mnt/data/ndip/
+  subject: 'S5'
+  sex: 'neutral'
+
+training_view: 3
+max_frames: -1
+
+output:
+  dir: /home/ndip/humannerf/dataset/wild/
+  name: 'S5'

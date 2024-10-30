@@ -1,0 +1,39 @@
+task: 'genebody'
+subject: 'barry'
+experiment: 'single_gpu'
+
+
+##############################################3
+## Data Configuration
+
+train:
+  dataset_module: 'core.data.human_nerf.train'
+  dataset: 'genebody_barry_train'
+
+progress:
+  dataset_module: 'core.data.human_nerf.train'
+  dataset: 'genebody_barry_test'
+
+movement:
+  dataset_module: 'core.data.human_nerf.train'
+  dataset: 'genebody_barry_test'
+
+freeview:
+  dataset_module: 'core.data.human_nerf.freeview'
+  dataset: 'genebody_barry_test'
+
+tpose:
+  dataset_module: 'core.data.human_nerf.tpose'
+  dataset: 'genebody_barry_test'
+
+bgcolor: [255., 255., 255.]
+resize_img_scale: 0.5
+patch:
+    size: 20
+
+render_frames: 9
+show_alpha: true
+
+topview_camera:
+  h: 1.2
+  r: 1.

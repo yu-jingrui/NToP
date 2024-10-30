@@ -1,0 +1,17 @@
+Note: Change the yaml files with the one located under the mentioned directory. eg: single_gpu.yaml and adventure.yaml
+
+**Basic**
+python run.py \
+    --type movement \
+    --cfg configs/human_nerf/zju_mocap/387/adventure.yaml 
+
+**Frame_specific**
+python run.py \
+    --type freeview \
+    --cfg configs/human_nerf/zju_mocap/387/adventure.yaml \
+    freeview.frame_idx 128
+
+**T-Pose**
+python run.py \
+--type tpose \
+--cfg configs/human_nerf/zju_mocap/387/adventure.yaml

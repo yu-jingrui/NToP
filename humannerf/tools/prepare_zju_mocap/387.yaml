@@ -1,0 +1,11 @@
+dataset:
+  zju_mocap_path: /mnt/data/ndip/
+  subject: '387'
+  sex: 'neutral'
+
+training_view: 0
+max_frames: 540
+
+output:
+  dir: /home/ndip/humannerf/dataset/
+  name: '387'

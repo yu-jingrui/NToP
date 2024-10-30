@@ -1,0 +1,31 @@
+task: 'h36m_multiview'
+subject: 'S11'
+experiment: 'adventure'
+
+
+##############################################3
+## Data Configuration
+
+train:
+  dataset_module: 'core.data.human_nerf.train'
+  dataset: 'h36m_S11_train'
+
+progress:
+  dataset_module: 'core.data.human_nerf.train'
+  dataset: 'h36m_S11_test'
+
+movement:
+  dataset_module: 'core.data.human_nerf.train'
+  dataset: 'h36m_S11_test'
+
+freeview:
+  dataset_module: 'core.data.human_nerf.freeview'
+  dataset: 'h36m_S11_test'
+
+tpose:
+  dataset_module: 'core.data.human_nerf.tpose'
+  dataset: 'h36m_S11_test'
+
+bgcolor: [255., 255., 255.]
+resize_img_scale: 1
+render_frames: 9

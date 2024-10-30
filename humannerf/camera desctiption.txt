@@ -1,0 +1,15 @@
+exmaple_frame ==> {'intrinsics': array([[1.0742814e+03, 0.0000000e+00, 5.4283423e+02],
+       [0.0000000e+00, 1.0754230e+03, 4.8488358e+02],
+       [0.0000000e+00, 0.0000000e+00, 1.0000000e+00]], dtype=float32), 'extrinsics': array([[-0.99369407,  0.09369569, -0.06158913,  0.05873722],
+       [-0.08569901, -0.28045344,  0.9560343 ,  0.99344832],
+       [ 0.07230341,  0.9552837 ,  0.28671455,  2.98925996],
+       [ 0.        ,  0.        ,  0.        ,  1.        ]]), 'distortions': array([-0.22035998,  0.03085136, -0.00532321,  0.00222319,  0.06431227],
+      dtype=float32)}
+
+File_name = cameras.pkl
+
+      The camera parameters in the cameras.pkl file are typically constant because they represent the physical cameras that were used to capture the motion capture data. These cameras are fixed in place and have a fixed set of intrinsic and extrinsic parameters that do not change during the motion capture session.
+
+In the context of the HumanNerF framework, these physical cameras are used to generate virtual cameras that can be used to render 3D images of the captured motion. The virtual cameras can be placed at any position and orientation in the 3D space, and their parameters (including the intrinsic and extrinsic parameters) can be adjusted to control the projection of the 3D scene onto the 2D image plane.
+
+      So while the physical camera parameters in the cameras.pkl file are constant, the virtual camera parameters can be varied to generate different views of the 3D scene. This allows for the generation of multiple 2D images of the motion capture data from different viewpoints, which can be useful for applications such as pose estimation, animation, or virtual reality.

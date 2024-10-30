@@ -1,0 +1,53 @@
+task: 'genebody'
+subject: 'barry'
+experiment: 'adventure'
+
+
+##############################################3
+## Data Configuration
+
+train:
+  dataset_module: 'core.data.human_nerf.train'
+  dataset: 'genebody_barry_train'
+  lr: 0.0001  # 5e-4
+  lr_mweight_vol_decoder: 0.00001 # 5e-5
+  lr_pose_decoder: 0.00001        # 5e-5
+  lr_non_rigid_mlp: 0.00001       # 5e-5
+  lrate_decay: 500
+
+
+progress:
+  dataset_module: 'core.data.human_nerf.train'
+  dataset: 'genebody_barry_test'
+
+movement:
+  dataset_module: 'core.data.human_nerf.train'
+  dataset: 'genebody_barry_test'
+
+freeview:
+  dataset_module: 'core.data.human_nerf.freeview'
+  dataset: 'genebody_barry_test'
+
+tpose:
+  dataset_module: 'core.data.human_nerf.tpose'
+  dataset: 'genebody_barry_test'
+
+bgcolor: [255., 255., 255.]
+resize_img_scale: 0.2
+
+
+netchunk_per_gpu: 78336 # number of pts sent through network in parallel, decrease if running out of memory
+chunk: 78336   # 32768=1024*32, number of rays processed in parallel, decrease if running out of memory
+#n_gpus: 2
+
+##############################################3
+## Network Specs
+
+# non-rigid motion mlp
+#non_rigid_motion_mlp:
+#  kick_in_iter: 100000
+#  full_band_iter: 200000
+
+# pose decoder
+#pose_decoder:
+#  kick_in_iter: 20000

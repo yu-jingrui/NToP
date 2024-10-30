@@ -1,0 +1,11 @@
+dataset:
+  genebody_path: /path/to/NToP/dataset/genebody/
+  subject: 'barry'
+  sex: 'neutral'
+
+training_view: ['01', '10', '19', '28', '37', '46']
+max_frames: -1
+
+output:
+  dir: /path/to/NToP/dataset/genebody_processed
+  name: 'barry'

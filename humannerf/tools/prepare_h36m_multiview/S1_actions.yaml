@@ -1,0 +1,12 @@
+dataset:
+  h36m_path: /path/to/NToP/dataset/h36m/
+  subject: S1
+  actions: ['Directions', 'Discussion','Eating', 'Greeting', 'Phoning', 'Photo', 'Posing', 'Purchases',
+            'Sitting', 'SittingDown', 'Smoking', 'Waiting', 'WalkDog', 'Walking', 'WalkTogether']
+  sex: neutral
+
+view: '55011271'
+max_frames: -1
+
+output:
+  dir: /path/to/NToP/dataset/h36m_multiview/

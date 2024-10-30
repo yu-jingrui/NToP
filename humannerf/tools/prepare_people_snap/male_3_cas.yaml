@@ -1,0 +1,11 @@
+dataset:
+  path: /mnt/data/ndip/people_snapshot_public/
+  subject: 'male-3-casual'
+  view_name: '0'  # same as name of the video
+  sex: 'neutral'
+
+
+output:
+  dir: /home/ndip/humannerf/dataset/people_snapshot/
+  name: 'male-3-casual'
+  
