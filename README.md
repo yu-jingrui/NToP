@@ -5,7 +5,7 @@
 
 [[Paper](https://arxiv.org/abs/2402.18196)]
 [[Datasets](https://www.tu-chemnitz.de/etit/dst/forschung/comp_vision/datasets/index.php.en)]
-[[ViT-Pose weights](https://tuc.cloud/index.php/s/JY66NkmTAqAdeKR)]
+[[ViT-Pose weights](https://tuc.cloud/index.php/s/w8w9g8fZEjAYmFi)]
 
 This repository is the implementation of NToP (ECCV 2024 Workshop SyntheticData4CV).
 
