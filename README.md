@@ -120,7 +120,7 @@ Now the required annotations in COCO and HybrIK format can be generated with thi
 Using the `Z. Final dataset concatenation` part in this notebook the dataset can be devided as described in the paper.
 
 ## Pre-trained weights
-The ViTPose-B model finetuned on NToP-train and config file is available [here](https://tuc.cloud/index.php/s/JY66NkmTAqAdeKR). It can be directly used with [ViTPose](https://github.com/ViTAE-Transformer/ViTPose).
+The ViTPose-B model finetuned on NToP-train and config file is available [here](https://tuc.cloud/index.php/s/w8w9g8fZEjAYmFi). It can be directly used with [ViTPose](https://github.com/ViTAE-Transformer/ViTPose).
 
 ## Citation
 ```BibTex
